@@ -1,4 +1,4 @@
-<h1><img width="200px" alt="Reservia" src="https://raw.githubusercontent.com/MaelTst/MaelTissot_3_12072021/main/img/logo/ohmyfood.svg" /></h1>
+<h1><img width="200px" alt="ohmyfood" src="https://raw.githubusercontent.com/MaelTst/MaelTissot_3_12072021/main/src/img/logo/ohmyfood.svg" /></h1>
 
 # Objectif
 
