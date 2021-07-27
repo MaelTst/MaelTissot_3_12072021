@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Ohmyfood</title>
+    <meta name="description" content="">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/prefixed/style.css" rel="stylesheet"> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7b50d1d691.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--<div class="loader">
+        <div class="loader__Animation"></div>
+    </div>-->
+    <header><a href=""><span>ohmyfood</span></a></header>
+
+    <main>
+        <section class="explore">
+            <div class="explore__Location">
+                <span>Paris, Belleville</span>
+            </div>
+            <div class="explore__Container">
+                <h1>Réservez le menu qui vous convient</h1>
+                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+                <a href="#restaurants" class="gradientBtn">Explorer nos restaurants</a>
+            </div>
+        </section>
+
+
+        <section class="howto">
+            <div class="howto__Title">
+                <h2>Fonctionnement</h2>
+            </div>
+            <ol class="howto__Container">
+                <li class="howto__Container__Btn"><i class="fas fa-mobile-alt"></i><span>Choisissez un restaurant</span>
+                </li>
+                <li class="howto__Container__Btn"><i class="fas fa-list-ul"></i><span>Composez votre menu</span></li>
+                <li class="howto__Container__Btn"><i class="fas fa-store"></i><span>Dégustez au restaurant</span></li>
+            </ol>
+        </section>
+
+        <section class="restaurants" id="restaurants">
+            <div class="restaurants__Title">
+                <h2>Restaurants</h2>
+            </div>
+            <div class="restaurants__Container">
+                <article class="restaurants__Container__Preview"><a href="#">
+                        <figure class="restaurants__Container__Fig">
+                            <div class="restaurants__Container__New">Nouveau</div>
+                            <picture class="restaurants__Container__PicOverflow">
+                                <source media="(max-width:435px)" srcset="img/restaurants/small/la-palette-du-gout.jpg"><img
+                                    src="img/restaurants/medium/la-palette-du-gout.jpg" alt="La palette du goût">
+                            </picture>
+                            <figcaption class="restaurants__Container__Desc">
+                                <div class="restaurants__Container__DescTitle">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="heartBtn">
+                        <svg class="heartBtn__Svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                        </svg>
+                    </div>
+                </article>
+                <article class="restaurants__Container__Preview"><a href="#">
+                        <figure class="restaurants__Container__Fig">
+                            <div class="restaurants__Container__New">Nouveau</div>
+                            <picture class="restaurants__Container__PicOverflow">
+                                <source media="(max-width:435px)" srcset="img/restaurants/small/la-note-enchantee.jpg"><img
+                                    src="img/restaurants/medium/la-note-enchantee.jpg" alt="La note enchantée">
+                            </picture>
+                            <figcaption class="restaurants__Container__Desc">
+                                <div class="restaurants__Container__DescTitle">
+                                    <h3>La note enchantée</h3>
+                                    <p>Charonne</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="heartBtn">
+                        <svg class="heartBtn__Svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                        </svg>
+                    </div>
+                </article>
+                <article class="restaurants__Container__Preview"><a href="a-la-francaise.html">
+                        <figure class="restaurants__Container__Fig">
+                            <picture class="restaurants__Container__PicOverflow">
+                                <source media="(max-width:435px)" srcset="img/restaurants/small/a-la-francaise.jpg"><img
+                                    src="img/restaurants/medium/a-la-francaise.jpg" alt="À la française">
+                            </picture>
+                            <figcaption class="restaurants__Container__Desc">
+                                <div class="restaurants__Container__DescTitle">
+                                    <h3>À la française</h3>
+                                    <p>Cité Rouge</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="heartBtn">
+                        <svg class="heartBtn__Svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                        </svg>
+                    </div>
+                </article>
+                <article class="restaurants__Container__Preview"><a href="#">
+                        <figure class="restaurants__Container__Fig">
+                            <picture class="restaurants__Container__PicOverflow">
+                                <source media="(max-width:435px)" srcset="img/restaurants/small/le-delice-des-sens.jpg"><img
+                                    src="img/restaurants/medium/le-delice-des-sens.jpg" alt="Le délice des sens">
+                            </picture>
+                            <figcaption class="restaurants__Container__Desc">
+                                <div class="restaurants__Container__DescTitle">
+                                    <h3>Le délice des sens</h3>
+                                    <p>Folie-Méricourt</p>
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="heartBtn">
+                        <svg class="heartBtn__Svg" viewBox="0 0 24 24">
+                            <path
+                                d="M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z" />
+                        </svg>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__Container">
+            <h4>ohmyfood</h4>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:mail@ohmyfood.com">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
