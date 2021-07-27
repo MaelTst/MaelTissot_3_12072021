@@ -1,0 +1,39 @@
+.gradientBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s;
+    background: linear-gradient(175deg, #FF79DA, #9356DC);
+    box-shadow: 0px 5px 15px 0px #bfbfbf;
+    color: white;
+    border-radius: 25px; 
+    height: 50px;
+    &:hover {
+        box-shadow: 0px 5px 10px 3px #bfbfbf;
+        filter: brightness(1.05)
+    }
+}
+
+.heartBtn {
+    width: 24px;
+    height: 24px;
+    mask-image: url(../img/svg/heart.svg);
+    -webkit-mask-image: url(../img/svg/heart.svg);
+    clip-path: path("M12 4.248c-3.148-5.402-12-3.825-12 2.944 0 4.661 5.571 9.427 12 15.808 6.43-6.381 12-11.147 12-15.808 0-6.792-8.875-8.306-12-2.944z");
+    transition: all .3s;
+    background: linear-gradient(to bottom, transparent 50%, #9356DC 50%, #FF79DA 100%);
+    background-size: 100% 200%;
+    background-position: top;
+    &__Svg {
+        fill: transparent;
+        stroke: #000000;
+        stroke-width: 3px;
+        transition: all .3s;
+    }
+    &:hover {
+        background-position: bottom;
+    }
+    &:hover &__Svg {
+        stroke: transparent;
+    }
+}
