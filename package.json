@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "sass": "sass --watch ./src/sass/main.scss:./src/css/main.css --style compressed",
-    "prefix": "postcss ./src/css/main.css --use autoprefixer -d ./src/css/prefixed/"
+    "build-sass": "sass --no-source-map ./src/sass/main.scss ./src/css/main.css --style compressed",
+    "prefix": "postcss --no-map ./src/css/main.css --use autoprefixer -r"
   },
   "repository": {
     "type": "git",

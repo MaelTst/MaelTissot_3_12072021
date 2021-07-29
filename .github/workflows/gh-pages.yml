@@ -8,8 +8,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm install -g sass autoprefixer postcss postcss-cli
-      - run: sass ./src/sass/main.scss ./src/sass/main.css --style compressed
-      - run: postcss ./src/sass/main.css --use autoprefixer -d ./src/css
+      - run: npm run build-sass
+      - run: npm run prefix
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
