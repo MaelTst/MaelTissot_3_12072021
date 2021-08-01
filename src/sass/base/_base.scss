@@ -11,3 +11,10 @@ a {
 body {
   margin: 0;
 }
+
+main {
+  @media (min-width: 1340px) {
+      max-width: 1340px;
+      margin: auto;
+  }
+}

@@ -1,0 +1,33 @@
+@keyframes loaderAnim {
+  from { background-position: 0px 0px; }
+  90% { opacity: 100%; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  visibility: visible;
+  background-color: #f6f6f6;
+  animation: loaderAnim 4s /*forwards*/infinite;
+  &__Animation {
+      width: 50%;
+  }
+}
+
+
+@keyframes menuAppear {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0px); }
+}
+
+@for $i from 1 through 13 {
+    .menu__Composition [data-delay="#{$i}"] {
+      animation-delay: ($i*0.1s);
+    }
+}

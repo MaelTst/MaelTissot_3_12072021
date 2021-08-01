@@ -1,0 +1,145 @@
+.headerImg {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    @media (min-width: 1340px) {
+        height: 600px;
+    }
+  }
+}
+
+.menu {
+  background-color: #f6f6f6;
+  margin-top: 250px;
+  position: relative;
+  border-radius: 40px 40px 0px 0px;
+  padding: 30px 15px 83px 15px;
+  @media (min-width: 1340px) {
+      margin-top: 350px;
+      border-radius: 40px;
+      box-shadow: 0px 2px 3px #dededead;
+  }
+  &__Title {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      padding: 0px 22px 27.5px 0px;
+      align-items: center;
+      h1 {
+          margin: 0;
+          font-family: 'Shrikhand', cursive;
+          font-size: 1.75rem;
+      }
+  }
+  &__Container {
+      display: flex;
+      flex-flow: column;
+      margin-bottom: 35px;
+      @media (min-width: 1000px) {
+        flex-flow: row;
+      }
+      h2 {
+          position: relative;
+          text-transform: uppercase;
+          font-weight: 400;
+          font-size: 1rem;
+          animation: menuAppear 500ms both;
+          &:after {
+              content: "";
+              width: 40px;
+              height: 3px;
+              background-color: #99e2d0;
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+          }
+      }
+  }
+  &__Composition {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    @media (min-width: 700px) {
+      align-items: center;
+    }
+  }
+  &__Choice {
+      background-color: white;
+      border-radius: 15px;
+      cursor: pointer;
+      display: flex;
+      flex-flow: row;
+      max-height: 68px;
+      overflow: hidden;
+      box-shadow: 0px 0px 15px #d2d2d2;
+      margin-bottom: 15px;
+      animation: menuAppear 500ms both;
+      @media (min-width: 700px) {
+        width: 65%;
+      }
+      @media (min-width: 1000px) {
+        width: 95%;
+      }
+      &__Desc {
+          flex-grow: 1;
+          white-space: nowrap;
+          overflow: hidden;
+          padding: 12px 0px 12px 10px;
+          h3 {
+              margin: 0px 0px 5px 0px;
+              font-size: 1.11rem;
+
+          }
+          p {
+              margin: 0;
+              font-size: .91rem;
+          }
+          h3, p {
+              overflow: hidden;
+              text-overflow: ellipsis;
+          }
+      }
+      &__Price {
+          display: flex;
+          align-items: flex-end;
+          font-weight: 600;
+          padding: 12px 20px 12px 10px;
+      }
+      &__Selected {
+          background-color: #99e2d0;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: -59px;
+          min-width: 59px;
+          font-size: 1.25rem;
+          transition: all .5s;
+          .fas {
+              transform: rotate(90deg);
+              transition: all .5s;
+          }
+      }
+      &:hover &__Selected {
+          margin-right: 0px;
+      }
+      &:hover .fas {
+          transform: rotate(360deg)
+      }
+  }
+  > a {
+      max-width: 186px;
+      margin: auto;
+  }
+}
+
+.homepageBtn {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 24px;
+}
