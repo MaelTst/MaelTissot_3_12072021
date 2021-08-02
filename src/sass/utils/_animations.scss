@@ -1,7 +1,14 @@
-@keyframes loaderAnim {
+@keyframes loaderVisibility {
   from { background-position: 0px 0px; }
   90% { opacity: 100%; }
-  to { opacity: 0; visibility: hidden; }
+  to { opacity: 0%; visibility: hidden; }
+}
+
+@keyframes loaderAnimation {
+  from {  }
+  50% {  }
+  90% { background-position: 0%; width: 70%; }
+  to { background-position: 0%; width: 0%; }
 }
 
 .loader {
@@ -14,9 +21,24 @@
   z-index: 100;
   visibility: visible;
   background-color: #f6f6f6;
-  animation: loaderAnim 4s /*forwards*/infinite;
+  animation: loaderVisibility 3s both;
   &__Animation {
-      width: 50%;
+      width: 70%;
+      max-width: 600px;
+      height: 100%;
+      mask-image: url(../img/logo/ohmyfood.svg);
+      -webkit-mask-image: url(../img/logo/ohmyfood.svg);
+      /*background: linear-gradient(to left, #000 47%, #9356DC 50%, #FF79DA 100%); */
+      background: linear-gradient(to left, #000 50%, #000 50%, #000 100%);
+      background-size: 240% 100%;
+      background-position: right;
+      mask-size: contain;
+      mask-position: center;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+      -webkit-mask-position: center;
+      -webkit-mask-repeat: no-repeat;
+      animation: loaderAnimation 2.8s both;
   }
 }
 

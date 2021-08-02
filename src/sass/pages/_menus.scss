@@ -2,13 +2,15 @@
   position: fixed;
   top: 0px;
   left: 0px;
+  width: 100%;
+  height: 400px;
+  @media (min-width: 1340px) {
+    height: 600px;
+}
   img {
-    width: 100%;
-    height: 400px;
+    min-width: 100%;
+    height: 100%;
     object-fit: cover;
-    @media (min-width: 1340px) {
-        height: 600px;
-    }
   }
 }
 
@@ -41,6 +43,7 @@
       margin-bottom: 35px;
       @media (min-width: 1000px) {
         flex-flow: row;
+        justify-content: space-evenly;
       }
       h2 {
           position: relative;
@@ -66,6 +69,9 @@
     @media (min-width: 700px) {
       align-items: center;
     }
+    @media (min-width: 1000px) {
+        width: 33.3%;
+      }
   }
   &__Choice {
       background-color: white;
