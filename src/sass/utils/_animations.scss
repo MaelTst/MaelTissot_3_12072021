@@ -5,10 +5,14 @@
 }
 
 @keyframes loaderAnimation {
+  from { background-position: right; }
+  to { background-position: left; }
+}
+
+@keyframes loaderAnimationOut {
   from {  }
-  50% {  }
-  90% { background-position: 0%; width: 70%; }
-  to { background-position: 0%; width: 0%; }
+  90% { width: 70%; }
+  to { width: 0%; }
 }
 
 .loader {
@@ -24,13 +28,12 @@
   animation: loaderVisibility 3s both;
   &__Animation {
       width: 70%;
-      max-width: 600px;
+      max-width: 400px;
       height: 100%;
       mask-image: url(../img/logo/ohmyfood.svg);
       -webkit-mask-image: url(../img/logo/ohmyfood.svg);
-      /*background: linear-gradient(to left, #000 47%, #9356DC 50%, #FF79DA 100%); */
-      background: linear-gradient(to left, #000 50%, #000 50%, #000 100%);
-      background-size: 240% 100%;
+      background: linear-gradient(to left, #000 33%, #9356DC 36%, #FF79DA 63%, #000 66%, #000 100%);
+      background-size: 300% 100%;
       background-position: right;
       mask-size: contain;
       mask-position: center;
@@ -38,10 +41,9 @@
       -webkit-mask-size: contain;
       -webkit-mask-position: center;
       -webkit-mask-repeat: no-repeat;
-      animation: loaderAnimation 2.8s both;
+      animation: loaderAnimation 1.4s infinite, loaderAnimationOut 2.8s both;
   }
 }
-
 
 @keyframes menuAppear {
   from { opacity: 0; transform: translateY(30px); }
