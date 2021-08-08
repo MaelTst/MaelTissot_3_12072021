@@ -26,6 +26,6 @@ L'objectif de ce projet est d'intégrer les maquettes du site Ohmyfood, un outil
 
 
 # Environnement et langages
-* Visual Code Studio
+* Visual Studio Code
 * HTML
 * Sass
