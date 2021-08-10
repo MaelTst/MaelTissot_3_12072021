@@ -1,5 +1,5 @@
 @keyframes loaderVisibility {
-  from { background-position: 0px 0px; }
+  from { opacity: 100%; }
   90% { opacity: 100%; }
   to { opacity: 0%; visibility: hidden; }
 }
@@ -7,12 +7,6 @@
 @keyframes loaderAnimation {
   from { background-position: right; }
   to { background-position: left; }
-}
-
-@keyframes loaderAnimationOut {
-  from {  }
-  90% { width: 70%; }
-  to { width: 0%; }
 }
 
 .loader {
@@ -43,7 +37,7 @@
     -webkit-mask-size: contain;
     -webkit-mask-position: center;
     -webkit-mask-repeat: no-repeat;
-    animation: loaderAnimation 1s infinite, loaderAnimationOut 2.8s both;
+    animation: loaderAnimation 1s infinite;
   }
   &__Bar {
     width: 70%;
@@ -54,7 +48,7 @@
     background: linear-gradient(to left, transparent 33%, #9356DC 36%, #FF79DA 63%, transparent 66%, transparent 100%);
     background-size: 300% 100%;
     background-position: right;
-    animation: loaderAnimation 1s infinite, loaderAnimationOut 2.8s both;
+    animation: loaderAnimation 1s infinite;
   }
 }
 
